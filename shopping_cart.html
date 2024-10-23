@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Ahmad Lindsey</title>
+    <link href="w3.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <h1>Ahmad Lindsey - Assignment 4 - Shopping Cart</h1>
+    <div class="w3-container w3-white w3-half">
+        <h2>Product List</h2>
+            <div id="product-list"></div>
+    </div>
+    <div class="w3-container w3-black w3-half">
+        <h2>Shopping Cart</h2>
+        <div id="cart-summary" class="w3-container w3-large w3-red"></div>
+        <div id="cart-list"></div>
+            <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Cart Summary</h3>
+    <p>Total Items: <span id="total-items">0</span></p>
+    <p>Total Cost: $<span id="total-cost">0.00</span></p>
+
+    <button id="checkout-btn">Checkout</button>
+</body>
+</html>

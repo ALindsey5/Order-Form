@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - Ahmad Lindsey</title>
+    <link href="w3.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="jquery.js" defer></script>
+</head>
+<body class="w3-container w3-blue">
+    <h1>Ahmad Lindsey Assignment 5 - JQuery</h1>
+
+    <!-- Accordion Section -->
+    <section>
+        <h2>Accordion</h2>
+        <div class="accordion">
+            <button class="w3-button w3-block w3-left-align">Panel 1</button>
+            <div class="w3-container w3-hide panel">
+                <p>Content for panel 1.</p>
+            </div>
+            <button class="w3-button w3-block w3-left-align">Panel 2</button>
+            <div class="w3-container w3-hide panel">
+                <p>Content for panel 2.</p>
+            </div>
+            <button class="w3-button w3-block w3-left-align">Panel 3</button>
+            <div class="w3-container w3-hide panel">
+                <p>Content for panel 3.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Tabbed Panels Section -->
+    <section>
+        <h2>Tabbed Panels</h2>
+        <div class="w3-bar w3-blue">
+            <button class="w3-bar-item w3-button tablink">Tab 1</button>
+            <button class="w3-bar-item w3-button tablink">Tab 2</button>
+            <button class="w3-bar-item w3-button tablink">Tab 3</button>
+        </div>
+    
+        <div class="tab-content">
+            <div class="w3-container content">Content for Tab 1</div>
+            <div class="w3-container content w3-hide">Content for Tab 2</div>
+            <div class="w3-container content w3-hide">Content for Tab 3</div>
+        </div>
+    </section>
+    
+
+    <!-- Slideshow Section -->
+    <section>
+        <h2>Picture Slideshow</h2>
+        <div class="w3-display-container slideshow">
+            <img src="image1.jpg" class="w3-animate-opacity active" style="width:100%">
+            <img src="image2.jpg" class="w3-animate-opacity" style="width:100%">
+            <img src="image3.jpg" class="w3-animate-opacity" style="width:100%">
+    
+            <button class="w3-button w3-display-left prev">❮</button>
+            <button class="w3-button w3-display-right next">❯</button>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ahmad Lindsey Shopping</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="w3.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body class="w3-container w3-blue">
+        <h1>Ahmad Lindsey - Assignment 1</h1>
+        <form id="orderForm" class="w3-container w3-half w3-white">
+           <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="w3-container w3-half">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="John" class="w3-input">
+                        <span id="first_name_error" class="error"></span>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Doe" class="w3-input">
+                        <span id="last_name_error" class="error"></span>
+                    </div>
+                    <div class="w3-container w3-half">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="john.doe@example.com" class="w3-input">
+                        <span id="email" class="error"></span>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" placeholder="123-456-7890" class="w3-input">
+                        <span id="phone_error" class="error"></span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <label for="shipping_address">Shipping Address</label>
+                    <textarea id="shipping_address" class="w3-input" placeholder="4242 Wallaby Way, City, State, ZIP"></textarea><br>
+                    <span id="shipping_address_error" class="error"></span>
+                    <div class="w3-container w3-half">
+                        <label for="product">Product Selection</label>
+                        <select id="product" class="w3-select">
+                            <option value="">Select One</option>
+                            <option value="prodcut1" data-price="1,099">Samsung Galaxy Z Flip 6 ($1,099)</option>
+                            <option value="prodcut2" data-price="1,299">Samsung Galaxy S24 Ultra ($1,299)</option>
+                            <option value="prodcut3" data-price="1,899">Samsung Galaxy Z Fold 6 ($1,899)</option>
+                        </select>
+                        <span id="product_error" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="quantity">Quantity:</label>
+                        <input id="quantity" type="text">
+                        <span id="quantity_error" class="error"></span>
+                    </div>    
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <div class="w3-container w3-half">
+                        <strong>Payment Method</strong><br>
+                        <input class="w3-radio" type="radio" id="visa" name="payment_type" value="visa">
+                        <label for="visa">VISA</label><br>
+                        <input class="w3-radio" type="radio" id="amex" name="payment_type" value="amex">
+                        <label for="amex">American Express</label><br>
+                        <input class="w3-radio" type="radio" id="mc" name="payment_type" value="mc">
+                        <label for="mc">Master Card</label><br><br>
+                        <span id="payment_type_error" class="error"></span>
+                        <label for="card_number">Card Number:</label>
+                        <input class="w3-input" type="text" id="card_number" placeholder="4444333322221111">
+                        <span id="card_number_error" class="error"></span>
+                        <label for="order_date">Order Date</label>
+                        <input class="w3-input" type="text" id="order_date">
+                        <span id="order_date_error" class="error"></span>
+                    </div>
+                </fieldset><br><br>
+                <div class="w3-container w3-half">
+                    <button type="button" id="order_button" class="w3-button">Submit Order</button>
+                    <button type="reset" class="w3-button">Reset</button>
+                </div>
+                <div id="output"></div>
+        </form>
+    </body>
+</html>

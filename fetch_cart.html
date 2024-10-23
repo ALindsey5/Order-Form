@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="w3.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="w3-blue">
+
+    <h1 class="w3-text-white w3-center">Shopping Cart</h1>
+
+    <!-- Shopping Cart List -->
+    <section id="cart-list" class="w3-container w3-light-grey w3-padding w3-card w3-margin">
+        <h2 class="w3-text-black">Cart Items</h2>
+        <ul id="cart-items" class="w3-ul w3-border w3-white w3-text-black"></ul>
+    </section>
+
+    <!-- Cart Summary -->
+    <section id="cart-summary" class="w3-container w3-red w3-padding w3-card w3-margin">
+        <h2 class="w3-text-white">Cart Summary</h2>
+        <p class="w3-text-white">Total Items: <span id="total-items">0</span></p>
+        <p class="w3-text-white">Total Price: $<span id="total-price">0.00</span></p>
+    </section>
+
+    <script src="fetch_cart.js"></script>
+</body>
+</html>
